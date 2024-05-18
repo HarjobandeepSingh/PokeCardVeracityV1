@@ -1,0 +1,106 @@
+*{
+   
+    image-rendering: pixelated;
+}
+.rg img{
+    width: 8vw;
+    margin: 15px 50px;
+}
+.bg-form{
+    background: #4a6741;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    width: 60%;
+    height: 65%;
+    display: flex;
+    margin-left: 20%;
+    margin-top: 4%;
+    z-index: 4;
+    position: absolute;
+}
+.formsideimg{
+width: 50%;
+height: auto;
+border-radius: 15px;
+}
+.formsideimg img{
+    background: #22311d;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.form{
+    background: #22311d;
+    width: 50%;
+    color: white;
+    margin: 20px;
+    border-radius: 15px;
+}
+.form-control{
+    width: 170% !important;
+    margin-bottom: 8px;
+}
+span{
+    display: block !important;
+    width: 200% !important;
+}
+
+input[type="file"]{
+    width: 100% !important;
+    border: 5px solid;
+    border-image: conic-gradient(from var(--angle), #251b28, #2faa85,#7cb96f) 0.5;
+    
+	
+	animation: 10s rotate linear infinite;
+}
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+
+
+
+input[type="submit"]{
+    margin-left: 21.2vw;
+    border: none;
+    padding: 6px 10px 6px 10px;
+    border-radius: 8px;
+    color: white !important;
+}
+.cre{
+    position: absolute !important;
+}
+
+.kl{
+    position: absolute !important;
+    top: 0 !important;
+    transform: translate(42.5vw, 50px) !important;
+}
+.kl img{
+    width: 150px;
+    height: 75px;
+}
+.formain {
+    position: relative; /* make the div relative to position the pseudo-element */
+  }
+  
+  .formain::before {
+    content: ""; /* create an empty pseudo-element */
+    position: absolute; /* position it absolutely over the div */
+    top: 0; /* align it to the top left corner of the div */
+    left: 0;
+    width: 100%; /* make it cover the entire div */
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8); /* give it a semi-transparent black background color */
+  }
+  
